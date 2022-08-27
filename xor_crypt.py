@@ -34,65 +34,9 @@ else:
 				decrypt += chr(ord(j)^ord(key))
 			except TypeError:
 				decrypt += chr(ord(j)^key)
-		loop = True
 		if vxod == decrypt:
-			while loop:
-				print("Что бы выйти напишите (exit) ")
-				print("Что бы скачать фото по url напишите (save foto)")
-				print("мини игра (mini game)")
-				comanda = input()
-				if comanda == "mini game":
-					say = ['машин','аниме','гладиолус','мир']
-					say2 = random.randint(0,3)
-					if say2 == 0:
-						say3 = say[0]
-						print("BMW, Ferrari, Ford, Lamborghini, Mazda, Jaguar. Это все марки", say3[:2])
-						otvet = input()
-						if otvet == 'машин':
-								print("Молодец")
-								input()
-						if otvet != 'машин':
-							print("Ты че тупой?")
-							print("BMW, Ferrari, Ford, Lamborghini, Mazda, Jaguar. Это все марки", say3[:3])
-							otvet = input()
-							if otvet == 'машин':
-								print("Молодец")
-								input()
-							if otvet != 'машин':
-								print("Ты че совсем уже с своими играми отупел?")
-								print("BMW, Ferrari, Ford, Lamborghini, Mazda, Jaguar. Это все марки", say3[:4])
-								otvet = input()
-								if otvet == 'машин':
-									print("Молодец")
-								if otvet != 'машин':
-									print("Ты слишком тупой чтобы ответить на этот вопрос. Ты проиграл.")
-						
-						
-					if say2 == 1:
-						say4 = say[1]
-						print("Эта анимиция пошла из Японии и називаеться она",say4[:2])
-						otvet2 = input()
-						if otvet2 != 'аниме':
-							print("Ты серьезно? Ответ не правильний")
-							print("Эта анимиция пошла из Японии и називаеться она",say4[:3])
-							otvet2 = input()
-							if otvet2 != 'аниме':
-								print("Как я понял твой IQ не может ответить на этот вопрос. Ты проиграл")
-							if otvet2 == 'аниме':
-								print("Мое тебе уважение. Это правильний ответ.")
-						if otvet2 == 'аниме':
-							print("Мое тебе уважение. Это правильний ответ.")
-						
-					if say2 == 2:
-						print(say[2])
-						input()
-						
-					if say2 == 3:
-						print(say[3])
-						input()
-						
-				if comanda == 'exit':
-					loop = False
+			print("Access allowed")
+			
 
 
 
